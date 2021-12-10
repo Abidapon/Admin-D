@@ -1,0 +1,21 @@
+/* animation */
+
+@keyframes bottomToTop {
+    0%{
+        transform: translatey(2000px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes topToBottom {
+    0%{
+        transform: translatey(-2000px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}

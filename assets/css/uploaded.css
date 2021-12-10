@@ -1,0 +1,90 @@
+@import url(global.css);
+@import url(animation.css);
+
+body{
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299)
+
+}
+
+.uploaded_list_container{
+  background: white;
+  margin: 2rem auto;
+  width: 500px;
+  border-radius: .4rem;
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+  height: auto;
+}
+.uploaded_list_container h4{
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-color);
+  letter-spacing: .1rem;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+.uploaded_list_container .upload_list_container div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--placeholder-color);
+  padding: 1rem 0;
+  margin: 1rem;
+}
+.uploaded_list_container .upload_list_container .img_container{
+  height: 60px;
+  width: 60px;
+  box-shadow: var(--box-shadow);
+  border-radius: 50%;
+  border: 2px solid white;
+  overflow: hidden;
+}
+.uploaded_list_container .upload_list_container .img_container img{
+  transform: scale(1.5);
+  margin-top: .4rem;
+}
+.uploaded_list_container .upload_list_container span{
+  font-size: 1rem;
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .2rem;
+}
+.uploaded_list_container .upload_list_container input{
+  background: red;
+  border: 1px solid red;
+  padding: .1rem .5rem;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: .1rem;
+  cursor: pointer;
+  transition: all 500ms ease-in;
+}
+
+.uploaded_list_container .upload_list_container input:hover{
+  color: red;
+  background: transparent;
+}
+
+
+.uploaded_list_container button {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  padding: .3rem 2rem;
+  background: green;
+  border: 1px solid green;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.uploaded_list_container button:hover{
+  color: green;
+  background: transparent;
+}

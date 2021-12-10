@@ -1,0 +1,273 @@
+@import url(global.css);
+@import url(animation.css);
+body{
+    background: var(--body-background);
+}
+
+header h2{
+    background: white;
+    display: block;
+    margin: 1rem 5rem;
+    padding: 1rem;
+    text-align: center;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: .4rem;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
+    animation: topToBottom 500ms;
+}
+
+.intern-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.intern-card-container .top-cards{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
+    border-radius: .4rem;
+    margin: 0 5rem;
+    padding: 1rem;
+    padding-top: 0;
+    overflow-y: scroll;
+    animation: topToBottom 400ms;
+}
+.top-cards h4{
+    color: var(--text-color);
+    padding-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    height: 150px;
+    justify-content: center;
+    align-items:center;
+    padding: 1rem;
+    animation: bottomToTop 600ms;
+}
+
+
+
+.intern-card-container .top-cards .card{
+    width: 150px;
+    height: 120px;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.06);
+    border-radius: .4rem;
+    padding: 1rem;
+    overflow: hidden;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+    margin: .4rem;
+}
+.active{
+    background: var(--blue-color);
+    transform: scale(.8);
+}
+.active span{
+    color: white !important;
+    letter-spacing: 5px;
+}
+.intern-card-container .top-cards .card:hover{
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
+}
+
+.img-container {
+    width: 50px;
+    height:50px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 50%;
+    border:2px solid white;
+    cursor: pointer;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,.1);
+    transition: all 300ms ease-in;
+}
+.img-container:hover{
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
+    transform: scale(1.1);
+}
+
+.intern-card-container .top-cards .card span{
+    color: var(--text-color);
+    text-transform: uppercase;
+    margin-top: 1rem;
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+/* details css here */
+.details-card{
+   background: white;
+    padding: 1rem;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.06);
+    border-radius: .4rem;
+    margin: 1rem 5rem;
+    width: 1185px;
+    animation: bottomToTop 500ms;
+}
+
+@media screen and (max-width: 1300px){
+    .details-card{
+        width: 80%;
+    }
+}
+
+
+.details-card h4{
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.details-card .photo-section{
+    border-bottom: 1px solid var(--text-color);
+    animation: bottomToTop 850ms;
+}
+.details-card .photo-section span{
+    color: var(--text-color);
+    text-transform: uppercase;
+    margin-top: 1rem;
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+}
+.details-card .photo-section .photo-container{
+    width: 120px;
+    height:120px;
+    overflow: hidden;
+    margin: 0 auto;
+    border:2px solid white;
+    cursor: pointer;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,.1);
+    transition: all 300ms ease-in;
+    border-radius: .4rem;
+}
+.details-card .photo-section .photo-container img{
+    transform: scale(1.4);
+    
+}
+
+
+/* copyed */
+.dev-social-container{
+    border-bottom: 1px solid var(--blue-color);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    animation: bottomToTop 1000ms;
+}
+
+.dev-social-container .dev-container h3{
+    margin-bottom: 1rem;
+}
+.dev-social-container .dev-container .dev-options select{
+    background: transparent;
+    border:1px solid var(--blue-color);
+}
+.dev-social-container .dev-container .dev-options select option{
+    width: 200px;
+}
+@media (max-width: 570px){
+    .social-container h3{
+        margin-top: 2rem;
+    }
+}
+.dev-social-container .social-medias ul{
+    list-style-type: none;
+    margin-top: 1rem;
+}
+.dev-social-container .social-medias ul li{
+    line-height: 2;
+}
+.dev-social-container .social-medias ul li a{
+    border-left: 2px solid var(--blue-color);
+    padding-left: 1rem;
+    
+}
+.dev-social-container .social-medias ul li a:hover{
+    background: var(--blue-color);
+    color: white;
+}
+
+
+/* worked project css Start */
+.worked-project-container{
+    border-bottom: 1px solid var(--blue-color);
+    padding: 2rem;
+    animation: bottomToTop 1300ms;
+}
+.worked-project-container h3{
+    margin-bottom: 1rem;
+}
+.worked-photo-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.worked-photo{
+    width: 250px;
+    height: auto;
+    padding: .4rem;
+    overflow: hidden;
+    margin: 1rem;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.1);
+    cursor: pointer;
+    transition: transform 300ms ease-in-out;
+    border-radius: .4rem;
+}
+.worked-photo:hover{
+    box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
+    transform: scale(1.1);
+}
+/* worked project css End */
+
+
+/* Portfolio container css start */
+.portfolio-container{
+    padding: 2rem;
+    animation: bottomToTop 1500ms;
+}
+.portfolio-container h3{
+    margin-bottom:1rem;
+}
+/* Portfolio container css End */
+
+
+
+/* link Css */
+.link{
+    font-size: 1rem;
+    margin:1rem 0 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+}
+
+.link a{
+    width: 150px;
+    display: inline-block;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.link a:hover{
+    color: var(--blue-color);
+}

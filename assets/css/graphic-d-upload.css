@@ -1,0 +1,174 @@
+@import url(global.css);
+@import url(animation.css);
+
+body{
+    background: -webkit-linear-gradient(left, #a445b2, #fa4299)
+}
+main{
+    display:flex;
+    align-items:center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    animation: topToBottom 1s;
+}
+
+
+.gd-upload-container, .gd-show-upload-container{
+    background: white;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 15px 2px rgba(0,0,0,.2);
+    border-radius: .4rem;
+    height: 570px;
+    transition: all 500ms ease-in;
+}
+
+.gd-upload-container:hover, .gd-show-upload-container:hover{
+    box-shadow: 0 0 5px 5px rgba(0,0,0,.09);
+}
+.gd-upload-container h2, .gd-show-upload-container h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    animation: topToBottom 1500ms;
+}
+
+.gd-form-container form label{
+    color: var(--text-color);
+    display: block;
+    margin: 2rem 0 .4rem 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    animation: topToBottom 1500ms;
+}
+
+.gd-show-upload-container h4 {
+    color: var(--text-color);
+     text-transform: uppercase;
+    font-weight: 500;
+}
+
+.gd-form-container form input{
+    width: 100%;
+    padding: .4rem;
+    outline: none;
+    text-transform: uppercase;
+    animation: topToBottom 1500ms;
+}
+
+
+#catagory{
+    background: transparent;
+    border: 1px solid var(--text-color);
+    width:100%;
+    padding:.2rem;
+}
+
+.gd-form-container form .upload{
+    width: 100%;
+    display: block;
+    background: rgba(0,0,0,.03);
+    border: 2px dashed var(--placeholder-color);
+    padding: 3rem 5rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    transition: all 500ms ease-in;
+    animation: bottomToTop 1500ms;
+}
+
+.gd-form-container form .upload:hover{
+    box-shadow: 0 0 5px 5px rgba(0,0,0,.09);
+}
+
+.gd-form-container .button{
+    background: var(--blue-color);
+    border: 1px solid var(--blue-color);
+    border-radius: .4rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all 500ms ease-in;
+}
+.gd-form-container .button:hover{
+    color: var(--blue-color);
+    background: transparent;
+}
+
+.gd-form-container span{
+    font-size: .72rem;
+    color: #666;
+    display: block;
+    text-align: center;
+}
+
+.gd-show-upload-container{
+    flex-direction: column;
+}
+
+.videos, .images{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
+}
+.video video, .img img{
+    height: 90px;
+    width: 130px;
+    margin: 1rem 2.3rem;
+    border: 2px solid white;
+    cursor: pointer; 
+    transition: all 300ms ease-in;
+}
+
+.img{
+    height: 180px;
+    overflow-y: scroll;
+}
+
+.video{
+    height: 180px;
+    overflow-y: scroll;
+    margin-bottom: 2rem;
+}
+.video video{
+    padding: 0;
+    margin: 1rem 2.3rem;
+    overflow: auto;
+    width: 130px;
+}
+
+
+.video video:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 2px 3px rgba(0,0,0,.09);
+} 
+.img img:hover{
+    box-shadow: 0 0 2px 3px rgba(0,0,0,.09);
+    transform: scale(1.1);
+}
+
+.footer{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: -.6rem;
+    animation: bottomToTop 2000ms;
+}
+
+.footer a{
+    width: 150px;
+    display: inline-block;
+    color: var(--text-color);
+}
+
+.footer a:hover{
+    color: var(--blue-color);
+}

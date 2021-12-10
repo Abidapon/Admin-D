@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design Upload</title>
+    <link rel="stylesheet" href="../css/graphic-d-upload.css">
+</head>
+<body>
+   <main>
+    <div class="gd-upload-container">
+        <h2>Graphic Design Upload</h2>
+        <div class="gd-form-container">
+            <form action="POST" class="gd-form">
+                <label for="name">Designer Name</label>
+                <input type="text" placeholder="Name" name="name" id="name" required>
+
+                <label for="catagory">File Catagory</label> 
+                <select name="catagory" id="catagory">
+                    <option value="video" class="ctg">Video File</option>
+                    <option value="jpeg" class="ctg">JPG/JPEG/PNG File</option>
+                    <option value="gif" class="ctg">Gif File</option>
+                    <option value="animation" class="ctg">Animation File</option>
+
+                </select>
+                
+                <label for="file">Upload Documents</label>
+                <input class="upload" type="file" name="upload-file" id="file" required>
+                <br>
+                <p>Only upload these(png, jpeg, jpg, psd, ai, animation, Gif, mp4, wmv)files</p>
+                <input type="button" value="Submit" class="button">
+            </form>
+        </div>
+    </div>
+   </main>
+
+   <div class="footer">
+    <a href="intern-page.html">Intern Page</a>
+    <a href="dashboard.html">Dashboard Page</a>
+    <a href="../../login-page.html">Login Page</a>
+
+   </div>
+</body>
+</html>
