@@ -1,7 +1,7 @@
 @import url(global.css);
 @import url(animation.css);
 body{
-    background: var(--body-background);
+    background: -webkit-linear-gradient(left, #a445b2, #fa4299) !important;
 }
 
 header h2{
@@ -183,6 +183,9 @@ header h2{
 .dev-social-container .dev-container .dev-options select option{
     width: 200px;
 }
+.ft{
+    font-size: 20px;
+}
 @media (max-width: 570px){
     .social-container h3{
         margin-top: 2rem;
@@ -262,9 +265,9 @@ header h2{
 }
 
 .link a{
+    color: black;    
     width: 150px;
     display: inline-block;
-    color: var(--text-color);
     text-align: center;
 }
 

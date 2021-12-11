@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphic Design Upload</title>
-    <link rel="stylesheet" href="../css/graphic-d-upload.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Upload with Progress Bar</title>
+  <link rel="stylesheet" href="./../css/graphic-d-upload.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-   <main>
-    <div class="gd-upload-container">
-        <h2>Graphic Design Upload</h2>
+  <div class="wrapper">
+    
+    <header>
+      <h3>Graphic Design Upload</h3>
+      <hr>
+      <br>
         <div class="gd-form-container">
-            <form action="POST" class="gd-form">
-                <label for="name">Designer Name</label>
-                <input type="text" placeholder="Name" name="name" id="name" required>
-
-                <label for="catagory">File Catagory</label> 
+                <label class="l1" for="name">Designer Name</label>
+                <input class="l2" type="text" placeholder="Name" name="name" id="name" required>
+                    <br>
+                <h4>File Catagory</h4> 
                 <select name="catagory" id="catagory">
                     <option value="video" class="ctg">Video File</option>
                     <option value="jpeg" class="ctg">JPG/JPEG/PNG File</option>
@@ -24,22 +26,25 @@
                     <option value="animation" class="ctg">Animation File</option>
 
                 </select>
-                
-                <label for="file">Upload Documents</label>
-                <input class="upload" type="file" name="upload-file" id="file" required>
-                <br>
-                <p>Only upload these(png, jpeg, jpg, psd, ai, animation, Gif, mp4, wmv)files</p>
-                <input type="button" value="Submit" class="button">
-            </form>
         </div>
-    </div>
-   </main>
+        <br>
+      <h3>Upload Documents</h3>
+    </header>
+    <form action="#">
+      <input class="file-input" type="file" name="file" hidden>
+      <i class="fas fa-cloud-upload-alt"></i>
+      <p>Browse File to Upload</p>
+    </form>
+    <section class="progress-area"></section>
+    <section class="uploaded-area"></section>
+    <div>
+        <a class="end" href="intern-page.html">Intern Page</a>
+        <!-- <a href="dashboard.html">Dashboard Page</a> -->
+        <a class="lp" href="../../login-page.html">Login Page</a>
+  </div>
+  
 
-   <div class="footer">
-    <a href="intern-page.html">Intern Page</a>
-    <a href="dashboard.html">Dashboard Page</a>
-    <a href="../../login-page.html">Login Page</a>
+  <script src="./../js/script.js"></script>
 
-   </div>
 </body>
 </html>
